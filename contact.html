@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaav healthcare</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo (1).png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2976.840171741614!2d-88.22233162521196!3d41.74554017125661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880ef7625dafffff%3A0xd3a0d8bb4a4d354d!2sKaav%20Inc!5e0!3m2!1sen!2sin!4v1703151560585!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </section>
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa-solid fa-house"></i>
+                    <span><h5>Meet Us<h5><p>KAAV INC 3925 75th Street,
+                        Suite 101 A,
+                        Aurora Illinois – 60504.</p>
+                        </span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <span><h5>Call Us<h5><p>+1 678-718-KAAV (5228)</p>
+                        </span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-fax"></i>
+                    <span><h5>KAAV INC<h5><p>+1 678-669-7839</p>
+                        </span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-envelope-open"></i>
+                    <span><h5>KAAV INC<h5><p>careers@kaavinc.com</p>
+                        </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <footer>
+            <p>&copy; 2023 Kaav Healthcare. All rights reserved.</p>
+        </footer>
+    </section>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+
+    </div>
+    <script>
+        var navLinks=document.getElementById("navLinks")
+        function showMenu(){
+            navLinks.style.right="0";
+
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
