@@ -1,1 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaav healthcare</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo (1).png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>SERVICES</h1>
+    </section>
+    <section class="services">
+        <h1>Services We Offer</h1>
+        <p>We offer a comprehensive set of services.
+            </p>
+            <div class="row">
+                <div class="service-col">
+                    <h3>Staffing</h3>
+                    <p>
+                    KAAV Healthcare will evaluate the skills and knowledge of candidates before presenting them for specific job roles.
+                    </p>
+                </div>
+                <div class="service-col">
+                    <h3>Quality & Compliance</h3>
+                    <p>
+                        KAAV Healthcare has the resources and knowledge to stay compliant with constantly changing regulations. We have a team of experts who can provide you with the best possible service. We are a principal supplier of quality talent, and pride ourselves in recruiting and retaining subject matter experts.
+                         Contact us today to learn more about our services.
+                    </p>
+                </div>
+                <div class="service-col">
+                    <h3>Regulatory Affairs</h3>
+                    <p>
+                        KAAV Healthcare provides global regulatory staffing and recruiting support across all stages of the drug and device development life cycle. Whether it’s contract staff augmentation, project teams, contract to hire or direct hire resources, KAAV Healthcare can assist your organization.
+                    </p>
+                </div>
+            </div>
+    </section>
+    <section class="footer">
+        <footer>
+            <p>&copy; 2023 Kaav Healthcare. All rights reserved.</p>
+        </footer>
+    </section>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
 
+    </div>
+    <script>
+        var navLinks=document.getElementById("navLinks")
+        function showMenu(){
+            navLinks.style.right="0";
+
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
