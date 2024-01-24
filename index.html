@@ -3,75 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kaav Healthcare</title>
+    <title>Kaav healthcare</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <style>
-        /* Dropdown styles */
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        /* Dropdown content (hidden by default) */
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            top: 100%;
-            min-width: 160px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            background-color: #fff;
-            z-index: 1;
-        }
-
-        /* Style the links inside the dropdown */
-        .dropdown-content a {
-            color: #333;
-            padding: 12px;
-            display: block;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-        }
-
-        /* Change color on hover */
-        .dropdown-content a:hover {
-            background-color: #f9f9f9;
-        }
-
-        /* Show the dropdown menu on hover */
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        /* Style for the main navigation links */
-        .nav-links ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .nav-links li {
-            display: inline-block;
-            margin-right: 20px;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-            padding: 10px;
-            transition: color 0.3s ease;
-        }
-
-        .nav-links a:hover {
-            color: #ff5722; /* Change color on hover */
-        }
-    </style>
 </head>
 <body>
-    <section class="sub-header">
+    <section class="header">
         <nav>
             <a href="index.html"><img src="images/logo (1).png"></a>
             <div class="nav-links" id="navLinks">
@@ -79,53 +16,65 @@
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="services.html">SERVICES</a></li>
-                    <li class="dropdown">
-                        <a href="#">ABOUT</a>
-                        <div class="dropdown-content">
-                            <a href="#">Verticals</a>
-                            <a href="#">Products</a>
-                            <a href="#">Business Solutions</a>
-                        </div>
-                    </li>
+                    <li><a href="about.html">ABOUT</a></li>
                     <li><a href="contact.html">CONTACT US</a></li>
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
-        <h1>About Us</h1>
-    </section>
-    <section class="about-us">
-        <div class="row">
-            <div class="about-col">
-                <h1>We are Kaav Healthcare</h1>
-                <p>Kaav Healthcare is on a mission to leverage the power of technology to enhance patient experiences, streamline healthcare delivery, and contribute to overall health and wellness. With a focus on preventive care, early diagnosis, and advanced treatment options, Kaav aspires to make a lasting impact on the health outcomes of individuals and communities.</p>
-                <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
-            </div>
-            <div class="about-col">
-                <img src="images/pexels-anna-shvets-5324853.jpg">
-            </div>
+        <div class="text-box">
+            <h1>Kaav Healthcare</h1>
+            <p>KAAV Healthcare is equipped with deep and diverse industry experience.<br>We will partner with you from scope definition through project completion to ensure your goals are met.
+            </p>
+            <a href="" class="hero-btn">Visit Us To Know More</a>
         </div>
     </section>
-    <section class="footer">
-        <footer>
-            <p>&copy; 2023 Kaav Healthcare. All rights reserved.</p>
-        </footer>
+    <section class="services">
+        <h1>Services We Offer</h1>
+        <p>We offer a comprehensive set of services.
+            </p>
+            <div class="row">
+                <div class="service-col">
+                    <h3>Staffing</h3>
+                    <p>
+                    KAAV Healthcare will evaluate the skills and knowledge of candidates before presenting them for specific job roles.
+                    </p>
+                </div>
+                <div class="service-col">
+                    <h3>Quality & Compliance</h3>
+                    <p>
+                        KAAV Healthcare has the resources and knowledge to stay compliant with constantly changing regulations. We have a team of experts who can provide you with the best possible service. We are a principal supplier of quality talent, and pride ourselves in recruiting and retaining subject matter experts.
+                         Contact us today to learn more about our services.
+                    </p>
+                </div>
+                <div class="service-col">
+                    <h3>Regulatory Affairs</h3>
+                    <p>
+                        KAAV Healthcare provides global regulatory staffing and recruiting support across all stages of the drug and device development life cycle. Whether it’s contract staff augmentation, project teams, contract to hire or direct hire resources, KAAV Healthcare can assist your organization.
+                    </p>
+                </div>
+            </div>
     </section>
+    <section class="cta">
+        <h1> Your health is our top priority<br> and we look forward to being a part of your wellness journey.</h1>
+        <a  href="contact.html" class="hero-btn">CONTACT US</a>
+    </section>
+
     <div class="icons">
         <i class="fa-brands fa-facebook"></i>
         <i class="fa-brands fa-x-twitter"></i>
         <i class="fa-brands fa-instagram"></i>
         <i class="fa-brands fa-linkedin"></i>
+
     </div>
     <script>
-        var navLinks = document.getElementById("navLinks");
+        var navLinks=document.getElementById("navLinks")
+        function showMenu(){
+            navLinks.style.right="0";
 
-        function showMenu() {
-            navLinks.style.right = "0";
         }
-
-        function hideMenu() {
-            navLinks.style.right = "-200px";
+        function hideMenu(){
+            navLinks.style.right="-200px";
         }
     </script>
 </body>
