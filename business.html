@@ -1,1 +1,66 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaav healthcare - Business Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo (1).png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li class="dropdown">
+                        <a href="about.html" class="dropbtn">ABOUT</a>
+                        <div class="dropdown-content">
+                            <a href="verticals.html">Verticals</a>
+                            <a href="business.html">Business Solutions</a>
+                        </div>
+                    </li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Business Solutions</h1>
+    </section>
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>Consultation</h1>
+                <p>Doyen's consulting team combines the business strategies and technology to improve process efficiency with reduced costs by anticipating the future. Doyen provides solutions to issues using a proven business-focused approach. We define the IT vision, roadmap, strategy, operations, business process and standards that guide organizations to build a high performance IT organization. Our extensive technical experience and strong strategic knowledge helps organizations achieve high quality IT services and high performance into their applications. We work with our clients to understand their business needs and help them define and execute plans using Six Sigma and other proven processes and methodologies across Enterprise Architecture Consulting, Customer Relationship Management, Supply Chain Management, Human Capital Management, Governance, Risk and Compliance, Government Consulting, Finance and Accounting.</p>
+                <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="images/placeholder-image.jpg">
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <footer>
+            <p>&copy; 2023 Kaav Healthcare. All rights reserved.</p>
+        </footer>
+    </section>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+    </div>
+    <script>
+        var navLinks=document.getElementById("navLinks")
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
